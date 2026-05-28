@@ -1,0 +1,366 @@
+/* Componenti Principali */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #e1e1e1;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: #cecece;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        padding: 10px;
+        margin: 10px 15px;
+    }
+
+    .index_a {
+
+        border: 1px solid black;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .index_a:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .dash_a {
+        color: #000;
+    }
+
+    .dash_a:hover {
+        text-decoration: underline;
+    }
+
+    h1 {
+        margin: 20px;
+        color: #319b08;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+td a:hover {
+    color: #1a26c8;
+}
+
+/* Varie */
+
+.a_yellow {
+    color: #e1a910;
+}
+
+.a_green {
+    color: #1fb904;
+}
+
+.a_orange {
+    color: #f6930a;
+}
+
+.a_red {
+    color: #f60a0a;
+}
+
+.content {
+    margin: 20px;
+    text-align: center;
+}
+
+.h1_style_one {
+    text-align: center;
+    margin: 90px auto;
+}
+
+.h1_style_two {
+    margin: 25px;
+}
+
+.one_line {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+
+    input[type=button] {
+        border: none;
+    }
+}
+
+.text_center {
+    text-align: center;
+}
+
+/* Home */
+
+.home_sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    section {
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px 0px;
+
+        table {
+            min-width: 30%;
+            padding: 0px 20px;
+            margin: 0 auto;
+
+            td,
+            th {
+                padding: 4px 10px;
+                min-width: 90px;
+            }
+
+            .tx_one {
+                width: 70%;
+            }
+        }
+    }
+}
+
+/* Login */
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+    margin: 30px auto;
+    font-size: 14px;
+
+    input[type=submit] {
+        border: 1px solid #000;
+        margin: 20px auto;
+        padding: 15px;
+        width: 40%;
+        background: #000;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        color: #000;
+        background: #fff;
+    }
+
+    select {
+        margin: 20px auto;
+        padding: 10px;
+        width: 70%;
+        background-color: transparent;
+    }
+
+    div {
+        margin: auto;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=date],
+        input[type=number] {
+
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid;
+            width: 100%;
+            background-color: transparent;
+            padding: 10px 5px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input[type=button] {
+            margin-bottom: 20px;
+            border: none;
+            background-color: transparent;
+            font-size: 14px;
+        }
+        input:read-only:not([type=button]){
+                font-style: italic;
+            }
+
+        input[type=button]:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.login_help {
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+
+    a {
+        color: #000;
+        width: 50%;
+        text-align: center;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+.login_help_center {
+    text-align: center;
+
+    a {
+        color: #000;
+    }
+
+    a:hover {
+        border-bottom: 1px solid #000;
+    }
+}
+
+.login_error {
+    text-align: center;
+    color: #ff0000;
+}
+
+/* Registrazione */
+
+.registration_complete {
+    margin: 90px auto;
+    text-align: center;
+
+    h2 {
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    a {
+        color: #000;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+/* Dashboard */
+
+.dash_sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.dash_section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 20px;
+
+    h2 {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    th,
+    td {
+        font-size: 18px;
+        padding: 15px;
+        text-align: center;
+        a{
+            margin: auto 10px;
+        }
+    }
+
+    table {
+        border: 1px solid;
+        border-radius: 25px;
+        background-color: #e5e5e5;
+        margin: 20px auto;
+        width: 80%;
+
+        .td_a_left {
+            margin-right: 30px;
+        }
+
+        .td_a_right {
+            margin-left: 30px;
+        }
+
+    }
+
+    p {
+        margin-left: 10px;
+    }
+
+    div {
+        margin: 20px auto;
+    }
+
+    .a_green {
+        padding: 10px;
+        border: 1px solid #1fb904;
+        border-radius: 20px;
+    }
+
+    .a_green:hover {
+        color: #fff;
+        background-color: #1fb904;
+    }
+
+    .a_green:active {
+        background-color: #1a26c8;
+        border: 1px #1a26c8;
+    }
+    h3,p{
+        margin-left: 20px;
+    }
+    span{
+        margin: 5px 30px;
+    }
+
+    
+}
+
+/* Prenotazione */
+
+.pren_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+
+    a {
+        color: #e1a910;
+        font-style: italic;
+    }
+
+    a:hover {
+        color: #1a26c8;
+    }
+}
